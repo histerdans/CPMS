@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+	<link href="vendors/easypiechart/jquery.easy-pie-chart.css" rel="stylesheet" media="screen">
+	<link href="assets/styles.css" rel="stylesheet" media="screen">
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+            <![endif]-->
+            <script src="vendors/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+
+            <title></title>
+        </head>
+        <body>
+
+        	<div class="row-fluid">
+        		<!-- block -->
+        		<div class="block">
+        			<div class="navbar navbar-inner block-header">
+        				<div class="muted pull-left">Statistics</div>
+        				<div class="pull-right"><span class="badge badge-warning">View More</span>
+
+        				</div>
+        			</div>
+        			<div class="block-content collapse in">
+        				<div class="span3">
+        					<div class="chart" data-percent="73">73%</div>
+        					<div class="chart-bottom-heading"><span class="label label-info">Visitors</span>
+
+        					</div>
+        				</div>
+        				<div class="span3">
+        				<div class="chart" data-percent="40">40%</div>
+        					<div class="chart-bottom-heading"><span class="label label-info">Page Views</span>
+
+        					</div>
+        				</div>
+        				<div class="span3">
+        					<div class="chart" data-percent="73">73%</div>
+        					<div class="chart-bottom-heading"><span class="label label-info">Users</span>
+
+        					</div>
+        				</div>
+        				<div class="span3">
+        					<div class="chart" data-percent="13">13%</div>
+        					<div class="chart-bottom-heading"><span class="label label-info">Orders</span>
+
+        					</div>
+        				</div>
+        			</div>
+        		</div>
+        		<!-- /block -->
+        	</div>
+        	<script src="vendors/jquery-1.9.1.min.js"></script>
+        	<script src="bootstrap/js/bootstrap.min.js"></script>
+        	<script src="vendors/easypiechart/jquery.easy-pie-chart.js"></script>
+        	<script src="assets/scripts.js"></script>
+        	<script>
+        		$(function() {
+            // Easy pie charts
+            $('.chart').easyPieChart({animate: 1000});
+        });
+        	</script>
+        </body>
+        </html>
